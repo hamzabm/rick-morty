@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp"
+    android:layout_marginTop="5dp"
+    android:background="#0F000000"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<ImageView
+    app:layout_constraintTop_toTopOf="parent"
+    app:layout_constraintBottom_toBottomOf="parent"
+    android:id="@+id/logo"
+    android:src="@android:drawable/ic_media_play"
+    app:layout_constraintStart_toStartOf="parent"
+    android:layout_marginStart="5dp"
+    android:layout_width="50dp"
+    android:layout_height="50dp"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:id="@+id/labelname"
+        app:layout_constraintBottom_toTopOf="@id/labeldate"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        android:text="@string/name"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/labelname"
+        app:layout_constraintStart_toEndOf="@id/logo"
+        android:id="@+id/labeldate"
+        android:text="@string/date"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/name"
+        android:text="test"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/labelname"
+        app:layout_constraintTop_toTopOf="@id/labelname"
+        app:layout_constraintBottom_toBottomOf="@id/labelname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+    <TextView
+        android:id="@+id/date"
+        android:text="test"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@id/labeldate"
+        app:layout_constraintTop_toTopOf="@id/labeldate"
+        app:layout_constraintBottom_toBottomOf="@id/labeldate"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

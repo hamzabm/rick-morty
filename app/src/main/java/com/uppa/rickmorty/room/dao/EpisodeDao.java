@@ -16,6 +16,10 @@ public interface EpisodeDao {
     @Query("SELECT * FROM episodes")
     List<Episode> getAll();
 
+    @Query("SELECT * FROM episodes where characterId= :id")
+    List<Episode> getAllById(String id);
+
+
     @Insert
     void insertAll(ArrayList<Episode> episodes);
 

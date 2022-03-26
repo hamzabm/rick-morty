@@ -17,5 +17,5 @@ public interface Api {
         Call<Character> getInfo(@Path("idCharacter") String id);
 
         @GET("/api/characters/{idCharacter}/episodes")
-        Call<List<Episode>> getEpisodes(@Path("idCharacter") int id);
+        Call<List<Episode>> getEpisodes(@Path("idCharacter") String  id);
 }
