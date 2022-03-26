@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Rick &amp; Morty</string>
+    <string name="welcome">Bienvenue</string>
+    <string name="list_des_caract_res">“List des caractères</string>
+</resources>
